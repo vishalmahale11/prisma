@@ -129,6 +129,13 @@ exports.Prisma.UserScalarFieldEnum = {
   country: 'country'
 };
 
+exports.Prisma.TodoScalarFieldEnum = {
+  id: 'id',
+  task_name: 'task_name',
+  duration: 'duration',
+  user_id: 'user_id'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -146,7 +153,8 @@ exports.Prisma.NullsOrder = {
 
 
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  Todo: 'Todo'
 };
 
 /**
