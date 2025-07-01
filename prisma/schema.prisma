@@ -10,18 +10,10 @@ datasource db {
 
 model User {
   id         Int     @id @default(autoincrement())
-  email      String  @unique
+  email      String?
   first_name String?
   last_name  String?
-  password   String
-  country    String
-  todo       Todo[]
+  password   String?
+  country    String?
 }
 
-model Todo {
-  id        Int    @id @default(autoincrement())
-  task_name String
-  duration  String
-  user_id   Int
-  user      User   @relation(fields: [user_id], references: [id])
-}
